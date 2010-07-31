@@ -1,0 +1,64 @@
+= Gem Wedge Plugin
+
+== DESCRIPTION
+
+The Gem Wedge Plugin converts the Wedge library 'wedge/gem.rb' into a
+RubyGems plugin, so that it is automatically loaded whenever RubyGems
+is loaded.
+
+
+== WHY
+
+One of the rarely mention edge cases with the way in which RubyGems loads
+library files, and in fact the way Ruby's load system works in general, is
+that the "lib space" is a free for all. Any library can drop any file into
+their package's lib/ directory and potentially clobber a file of the same name
+in some one else's library. Now, a good <i>gem citizen</i> knows to put their 
+scripts in a directory with the same name as their gem package, nonetheless you
+might be surprised to see how often this simple but important practice is
+violated.[1] Consequently the order in which such gems are searched becomes of
+paramount importance --something that worked just fine on one machine can
+suddenly stop working on another for no obvious reason.
+
+It is also worth noting that the recent crop of gem isolation systems, such as
+Bundler and Isolate, while serving to reduce the likelihood of possible name
+clashes still do not fully remedy the issue. They merely reduce the number to
+gems that could cause the problem for any given dependent application.
+
+[1] See the INFRACTIONS.rdoc file for examples.
+
+
+== HOW
+
+The Gem Wedge solves the issue entirely by allowing you to load files directly
+for a single gem and only that gem. It does so by adding a new valid syntax
+to Ruby's #load and #require methods. As an example, let's say we wanted to
+load the troff.rb script from the unroller library.
+
+  require 'unroller:troff'
+
+The colon is used to separate the gem name from the rest of the pathname.
+With this we can be 100% certain that the troff.rb file was required
+from the unroller gem and not a 'troff.rb' file from any other
+gem that might have created a script by the same name.
+
+
+== INSTALL
+
+Using the usual `gem` command:
+
+  $ gem install gem-wedge
+
+Keep in mind that this installs a RubyGems plugin. Once installed 
+gem-wedge will be loaded automatically whenever RubyGems itself
+is loaded.
+
+
+== LEGAL
+
+Copyright (c) 2010 Thomas Sawyer
+
+Apache 2.0 License
+
+(See LICENSE file for details.)
+

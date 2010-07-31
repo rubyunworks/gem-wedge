@@ -1,0 +1,13 @@
+= RELEASE HISTORY
+
+1.0.0 / 2010-08-01
+
+This is the initialize release of the Gem Wedge Plugin, and may well
+be the only release since it is simply a thin wrapper around the
+wedge gem's built-in library `wedge/gem.rb` library, converting
+it into a RubyGems plugin.
+
+Changes:
+
+* Happy Birthday!
+

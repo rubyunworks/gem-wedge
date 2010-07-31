@@ -1,0 +1,8 @@
+---
+name     : gem-wedge
+version  : 0.0.1
+date     : 2010-07-29
+
+requires:
+- wedge
+
