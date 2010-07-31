@@ -1,0 +1,36 @@
+---
+box:
+  service: Box
+  types  : [gem]
+  active : true
+
+dnote:
+  service  : DNote
+  loadpath : ~
+  labels   : ~
+  output   : ~
+  format   : ~
+  active   : true
+
+grancher:
+  service: Grancher
+  active: false
+
+gemcutter:
+  active: true
+
+email:
+  service : Email
+  file    : ~
+  subject : ~
+  mailto  : ruby-talk@ruby-lang.org
+  active  : true
+
+vclog:
+  service  : VClog
+  format   : html   # xml, txt
+  layout   : rel    # gnu
+  typed    : false
+  output   : ~
+  active   : false
+

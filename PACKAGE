@@ -1,7 +1,7 @@
 ---
 name     : gem-wedge
-version  : 0.0.1
-date     : 2010-07-29
+version  : 1.0.0
+date     : 2010-08-01
 
 requires:
 - wedge
