@@ -1,5 +1,15 @@
 = RELEASE HISTORY
 
+1.0.1 / 2010-09-03
+
+This release merely updates some project metadata. No functional
+changes have been made.
+
+Changes:
+
+* Update matedata; resource point to 'wedge' project.
+
+
 1.0.0 / 2010-08-01
 
 This is the initialize release of the Gem Wedge Plugin, and may well

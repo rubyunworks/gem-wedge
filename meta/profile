@@ -7,12 +7,12 @@ license: Apache 2.0
 created: 2010-07-21
 
 description:
-  The Gem Wedge plugin turn the Gem load wedge provided by
-  the wedge gem into a RubyGem plugin, so it is automatically
+  The Gem Wedge plugin turns the Gem load wedge provided by
+  the `wedge` gem into a RubyGem plugin, so it is automatically
   loaded whenever RubyGems is loaded.
 
 resources:
-  home: http://rubyworks.github.com/gem-wedge
+  home: http://rubyworks.github.com/wedge
   repo: git://github.com/rubyworks/gem-wedge.git
 
 copyright: Copyright (c) 2010 Thomas Sawyer
