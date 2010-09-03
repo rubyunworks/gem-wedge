@@ -1,6 +1,4 @@
-.cache
 log
-doc/qedoc
-doc/rdoc
-doc/ri
+ri
 pkg
+site/docs

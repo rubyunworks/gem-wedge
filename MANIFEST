@@ -1,8 +1,10 @@
-#!mast -x Syckfile .ruby bin expo lib test [A-Z]*
+#!mast -x Syckfile .ruby bin lib meta test [A-Z]*
 .ruby
 lib/rubygems_plugin.rb
+meta/data.rb
+meta/package
+meta/profile
 HISTORY.rdoc
-PROFILE
-PACKAGE
+LICENSE
 README.rdoc
 INFRACTIONS.rdoc
