@@ -1,5 +1,7 @@
+--- 
+name   : gem-wedge
 title  : Gem Wedge Plugin
-suite  : rubyworks
+company: RubyWorks
 summary: Safe Gem Loading
 contact: trans <transfire@gmail.com>
 authors: Thomas Sawyer
@@ -11,9 +13,16 @@ description:
   the `wedge` gem into a RubyGem plugin, so it is automatically
   loaded whenever RubyGems is loaded.
 
+requires:
+  - wedge
+  - syckle (build)
+
 resources:
   home: http://rubyworks.github.com/wedge
-  repo: git://github.com/rubyworks/gem-wedge.git
+  code: http://github.com/rubyworks/wedge
+
+repositories:
+  public: git://github.com/rubyworks/gem-wedge.git
 
 copyright: Copyright (c) 2010 Thomas Sawyer
 
